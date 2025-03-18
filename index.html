@@ -70,6 +70,14 @@
 
     }
 
+    @media(max-width:500px){
+      .hero{   
+      
+      height: fit-content;
+
+    }
+    }
+
     .hero-container{
       height: 100%;
       background-image: linear-gradient(45deg,rgba(3, 3, 3, 0.436),rgba(0, 0, 0, 0.417),rgba(0, 0, 0, 0.364)),url(Resources/AIEASE_2025-03-05-16-45-42-694.jpeg.jpg);
@@ -214,6 +222,83 @@
 
 
     /* categories ends---------------------------------- */
+
+
+    
+
+
+/* explore-food starts----------------------------------------------------- */
+
+.explore-food{
+  height: fit-content;
+  overflow-x: hidden;
+  background-color: #ed4c671d;
+}
+
+
+.explore-food .container{
+  height: 100%;
+}
+
+.explore-food .container .row-1{
+  height: 15%;
+  font-optical-sizing: auto;
+  font-style: normal;
+ 
+}
+
+.explore-food .container .row-2{ 
+    height: 85%;
+ }
+
+ .row-2 .col-lg-6 section{
+  border-radius: 1rem;
+  margin: 2% 0;
+  border: 1px solid rgba(0, 0, 0, 0.083);
+ }
+
+ .row-2 .col-lg-6 section:hover{
+  transform: scale3d(1.02,1.02,1.1);
+ }
+
+ .food-menu-img{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  
+
+ }
+
+ .food-menu-img img{
+  height: 15rem;
+  width: 100%;
+ 
+ }
+
+ .food-menu-img-left img{
+  border-radius: 1rem 0 0 1rem;
+ }
+
+ .food-menu-img-right img{
+  border-radius: 1rem 0 0 1rem;
+ }
+
+ .food-menu-desc button{
+  width: 7rem;
+ }
+
+ @media(max-width:500px){
+  .food-menu-section{
+    height:15rem;
+    
+  }
+
+}
+
+/* explore-food ends---------------------------------------------------------- */
+
     </style>
 
   </head>
@@ -274,7 +359,7 @@
      <div class="hero">
       <div class=" hero-container container-fluid d-flex flex-column align-content-center justify-content-center ">
 
-              <h2 class="display-1 text-white text-center mb-2" data-aos="zoom-in" data-aos-duration="1000">Food on wheels</h2>
+              <h2 class="display-1 text-white text-center my-4" data-aos="zoom-in" data-aos-duration="1000">Food on wheels</h2>
 
                <!-- book-table-section ------>
 
@@ -323,7 +408,7 @@
 
 
               <!-- food-search btn starts -->
-              <div class=" d-flex justify-content-center mt-4">
+              <div class=" d-flex justify-content-center my-4">
                 <div class="col-md-6  d-flex justify-content-around">
                   <form action="" class="hero-form d-flex justify-content-center w-100 " >
                     <input type="text" placeholder="Search food...." class="mx-3 text-center ">
