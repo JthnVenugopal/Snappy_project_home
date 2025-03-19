@@ -26,310 +26,311 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
 
-    <!-- styles added for faster page loading -->
-    <style>
+  <!-- styles added for faster page loading -->
+  <style>
 
-    /* general styles */
-    body{
-      /* background-color: #ffce0c91; */
-      background: linear-gradient(45deg,rgba(255, 255, 0, 0.13),rgba(255, 255, 0, 0.221),rgba(255, 255, 0, 0.14));
-      height: 100vh;
-      scroll-behavior: smooth;
+  /* general styles */
+  body{
+    /* background-color: #ffce0c91; */
+    background: linear-gradient(45deg,rgba(255, 255, 0, 0.13),rgba(255, 255, 0, 0.221),rgba(255, 255, 0, 0.14));
+    height: 100vh;
+    scroll-behavior: smooth;
 
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.152);
-    }
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.152);
+  }
 
-    a{
-      text-decoration: none !important;
-      color: #000000;
-    }
+  a{
+    text-decoration: none !important;
+    color: #000000;
+  }
 
 
-    /* navbar starts ------------------------------------------*/
+  /* navbar starts ------------------------------------------*/
 
-    .navbar {
-      z-index: 1000;
-    }
+  .navbar {
+    z-index: 1000;
+  }
 
-    .logo h3{
-      
-      font-family: "Dancing Script", cursive;
-      font-optical-sizing: auto;
-      font-weight: 1000;
-      font-style: normal;
+  .logo h3{
+    
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
 
-    }
+  }
 
-    .cart-icon{
-      height: 2.1rem;
-    }
+  .cart-icon{
+    height: 2.1rem;
+  }
 
-    .navbar-nav .nav-item a{
-      position: relative;
-    }
+  .navbar-nav .nav-item a{
+    position: relative;
+  }
 
-    .navbar-nav .nav-item a::after{
-         content: '';
-         position: absolute;
-         left: 0;
-         bottom: 0;
-         width: 0;
-         height: 2px;
-         background-color: rgb(120, 19, 19);
-         transition: width 0.3s ease;
-    }
+  .navbar-nav .nav-item a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(120, 19, 19);
+    transition: width 0.3s ease;
+  }
 
+  .navbar-nav .nav-item a:hover::after{
+    width: 100%;
+  }
+
+  @media(max-width:500px){
     .navbar-nav .nav-item a:hover::after{
-      width: 100%;
-    }
+    width: 0;
+  }
 
-    @media(max-width:500px){
-      .navbar-nav .nav-item a:hover::after{
-      width: 0;
-    }
+  }
 
-    }
+  /* navbar ends */
 
-    /* navbar ends */
+  /* hero starts --------------------------------------------*/
 
-    /* hero starts --------------------------------------------*/
+  .hero{   
+    
+    height: 70vh;
 
+  }
+
+  @media(max-width:500px){
     .hero{   
-      
-      height: 130vh;
-
-    }
-
-    @media(max-width:500px){
-      .hero{   
-      
-      height: fit-content;
-
-    }
-    }
-
-    .hero-container{
-      height: 100%;
-      background-image: linear-gradient(45deg,rgba(3, 3, 3, 0.436),rgba(0, 0, 0, 0.417),rgba(0, 0, 0, 0.364)),url(Resources/AIEASE_2025-03-05-16-45-42-694.jpeg.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size:cover;
-    }
-
-    .hero-container h2{
-      font-family: "Dancing Script", cursive;
-      font-optical-sizing: auto;
-      font-weight: 1000;
-      font-style: normal;
-      text-shadow: 1px 1px 1px black;
-    }
-
-    .hero-form input[type="text"]{
-      border: none;
-      height: 40px;
-      width: 50%;
-      border-radius: 5rem 0 0 5rem;
-      outline: none;
-    }
-
-    .hero-form input[type="submit"]{
-      border: none;
-      height: 40px;
-      width: 5rem;
-      border-radius: 0 5rem 5rem 0;
-      color: white;
-      background-color: rgb(205, 50, 50);
-    }
-
-    .book-table{
-      height:fit-content;
-      width: 100%;
-      
-    }
-
-    .book-table-blk{
-      background-color: rgba(0, 0, 0, 0.442);
-      padding: 10%;
-    }
-
-    .book-table .col-lg-6{
-      border: 1px solid rgba(255, 255, 255, 0.196);
-      
-    }
-
-    .reservation-form input{
-      width: 50%;
-    }
-
-    .notify-icon{
-      background-color: rgb(38, 255, 0);
-      height: 1rem;
-      width: 1rem;
-      border-radius: 0.5rem;
-    }
-
     
-    /* hero ends */
+    height: 70vh;
 
-    /* categories starts---------------------------------- */
+    }
+  }
 
+  .hero-container{
+    height: 100%;
+    background-image: linear-gradient(45deg,rgba(3, 3, 3, 0.436),rgba(0, 0, 0, 0.417),rgba(0, 0, 0, 0.364)),url(Resources/AIEASE_2025-03-05-16-45-42-694.jpeg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .hero-container h2{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .hero-form input[type="text"]{
+    border: none;
+    height: 40px;
+    width: 50%;
+    border-radius: 5rem 0 0 5rem;
+    outline: none;
+  }
+
+  .hero-form input[type="submit"]{
+    border: none;
+    height: 40px;
+    width: 5rem;
+    border-radius: 0 5rem 5rem 0;
+    color: white;
+    background-color: rgb(205, 50, 50);
+  }
+
+  .book-table{
+    height:fit-content;
+    width: 100%;
+    
+  }
+
+  .book-table-blk{
+    background-color: rgba(0, 0, 0, 0.442);
+    padding: 10%;
+  }
+
+  .book-table .col-lg-6{
+    border: 1px solid rgba(255, 255, 255, 0.196);
+    
+  }
+
+  .reservation-form input{
+    width: 50%;
+  }
+
+  .notify-icon{
+    background-color: rgb(38, 255, 0);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  
+  /* hero ends */
+
+  /* categories starts---------------------------------- */
+
+  .categories{
+    height: 70vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .category-section{
+    height: 100%;
+  }
+
+  @media(max-width:500px){
     .categories{
-      height: 70vh;
-      overflow-x: hidden;
-      overflow-y: hidden;
+      height:100vh;
     }
-
-    .category-section{
-      height: 100%;
-    }
-
-    @media(max-width:500px){
-      .categories{
-        height:100vh;
-      }
-
-      
-    }
-    .categories .container{
-      height: 100%;
-    }
-
-    .categories .container .row-1{
-
-      font-optical-sizing: auto;
-      font-style: normal;
-    }
-
-    .categories .container .row-2{
-      height: 65%;
-    }
-
-    .categories .container .row-2 .item-1 section{
-      background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)),url(Resources/burger.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-
-    }
-
-    .categories .container .row-2 .item-1 section h4{ 
-      text-shadow: 2px 2px 10px rgb(0, 0, 0);
-    }
-
-    .categories .container .row-2 .item-2 section h4{ 
-      text-shadow: 2px 2px 10px rgb(0, 0, 0);
-    }
-
-    .categories .container .row-2 .item-3 section h4{ 
-      text-shadow: 2px 2px 10px rgb(0, 0, 0);
-    }
-
-    .categories .container .row-2 .item-2 section{
-      background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)), url(Resources/pizza.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-
-    .categories .container .row-2 .item-3 section{
-      background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)), url(Resources/momo.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-
-    .categories .container .row-2 .item-1 section:hover {
-      transform: scale3d(1.05, 1.05, 1.01); 
-    }
-
-    .categories .container .row-2 .item-2 section:hover {
-      transform: scale3d(1.05, 1.05, 1.01);
-    }
-
-    .categories .container .row-2 .item-3 section:hover {
-      transform: scale3d(1.05, 1.05, 1.01); 
-    }
-
-
-    /* categories ends---------------------------------- */
-
 
     
+  }
+  .categories .container{
+    height: 100%;
+  }
+
+  .categories .container .row-1{
+
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .categories .container .row-2{
+    height: 65%;
+  }
+
+  .categories .container .row-2 .item-1 section{
+    background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)),url(Resources/burger.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .categories .container .row-2 .item-1 section h4{ 
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+  }
+
+  .categories .container .row-2 .item-2 section h4{ 
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+  }
+
+  .categories .container .row-2 .item-3 section h4{ 
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+  }
+
+  .categories .container .row-2 .item-2 section{
+    background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)), url(Resources/pizza.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .categories .container .row-2 .item-3 section{
+    background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)), url(Resources/momo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .categories .container .row-2 .item-1 section:hover {
+    transform: scale3d(1.05, 1.05, 1.01); 
+  }
+
+  .categories .container .row-2 .item-2 section:hover {
+    transform: scale3d(1.05, 1.05, 1.01);
+  }
+
+  .categories .container .row-2 .item-3 section:hover {
+    transform: scale3d(1.05, 1.05, 1.01); 
+  }
+
+
+  /* categories ends---------------------------------- */
+
+
+  
 
 
 /* explore-food starts----------------------------------------------------- */
 
 .explore-food{
-  height: fit-content;
-  overflow-x: hidden;
-  background-color: #ed4c671d;
+height: fit-content;
+overflow-x: hidden;
+background-color: #ed4c671d;
 }
 
 
 .explore-food .container{
-  height: 100%;
+height: 100%;
 }
 
 .explore-food .container .row-1{
-  height: 15%;
-  font-optical-sizing: auto;
-  font-style: normal;
- 
+height: 15%;
+font-optical-sizing: auto;
+font-style: normal;
+
 }
 
 .explore-food .container .row-2{ 
-    height: 85%;
- }
+  height: 85%;
+}
 
- .row-2 .col-lg-6 section{
-  border-radius: 1rem;
-  margin: 2% 0;
-  border: 1px solid rgba(0, 0, 0, 0.083);
- }
+.row-2 .col-lg-6 section{
+border-radius: 1rem;
+margin: 2% 0;
+border: 1px solid rgba(0, 0, 0, 0.083);
+}
 
- .row-2 .col-lg-6 section:hover{
-  transform: scale3d(1.02,1.02,1.1);
- }
+.row-2 .col-lg-6 section:hover{
+transform: scale3d(1.02,1.02,1.1);
+}
 
- .food-menu-img{
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
+.food-menu-img{
+width: 60%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: fit-content;
+
+
+}
+
+.food-menu-img img{
+height: 15rem;
+width: 100%;
+
+}
+
+.food-menu-img-left img{
+border-radius: 1rem 0 0 1rem;
+}
+
+.food-menu-img-right img{
+border-radius: 1rem 0 0 1rem;
+}
+
+.food-menu-desc button{
+width: 7rem;
+}
+
+@media(max-width:500px){
+.food-menu-section{
+  height:15rem;
   
-
- }
-
- .food-menu-img img{
-  height: 15rem;
-  width: 100%;
- 
- }
-
- .food-menu-img-left img{
-  border-radius: 1rem 0 0 1rem;
- }
-
- .food-menu-img-right img{
-  border-radius: 1rem 0 0 1rem;
- }
-
- .food-menu-desc button{
-  width: 7rem;
- }
-
- @media(max-width:500px){
-  .food-menu-section{
-    height:15rem;
-    
-  }
+}
 
 }
 
 /* explore-food ends---------------------------------------------------------- */
 
-    </style>
+  </style>
+  <!-- styles added for faster page loading -->
 
   </head>
 
@@ -393,54 +394,8 @@
      <div class="hero">
       <div class=" hero-container container-fluid d-flex flex-column align-content-center justify-content-center ">
 
-              <h2 class="display-1 text-white text-center my-4" data-aos="zoom-in" data-aos-duration="1000">Food on wheels</h2>
-
-               <!-- book-table-section ------>
-
-               <section class="book-table my-1 d-flex justify-content-center">
-
-                <div class="col-lg-6 shadow-lg rounded  p-3 book-table-blk w-lg-75 w-md-75 w-sm-75 w-xs-75 p-5" data-aos="zoom-in" data-aos-duration="1000">
-
-                  <h4 class="display-6 text-light text-center mb-3">Make a Reservation</h4>
-                  
-                  <!-- form starts -->
-                  <form action="" method="" class=" reservation-form d-flex flex-column align-items-center" >
-                  
-                        <label for="date" class="text-white mb-2">Enter Reservation Date</label>
-                        <input type="date" id="date" class="form-control w-75">
-                        <br>
-                        <label for="date" class="text-white mb-2">Enter Reservation Time</label>
-                        <input type="time" class="form-control w-75" placeholder="Enter time">
-                        <br>
-                        <label for="date" class="text-white mb-2">Enter Number of guests</label>
-                        <input type="number" placeholder="0" class="form-control w-75 mb-2">
-                        <br>
-                        <button class="btn btn-primary mb-4">Submit</button>
-
-                        <!-- Reservation availability starts -->
-
-                        <div class="reservation-availabilty d-flex justify-content-center w-100">
-                          
-                            <div class="notify-icon mt-1">
-                              .
-                            </div>
-
-                            <h6 class="px-3 text-white ">Reservation Available</h6>
-
-                        </div>
-
-                        <!-- Reservation availabilty ends--- -->
-
-                  </form>
-                  <!-- form ends-- -->
-
-                </div>
-
-              </section>
-
-              <!-- book-table-section ends-->
-
-
+          <h2 class="display-1 text-white text-center my-4" data-aos="zoom-in" data-aos-duration="1000">Food on wheels</h2>
+             
               <!-- food-search btn starts -->
               <div class=" d-flex justify-content-center my-4">
                 <div class="col-md-6  d-flex justify-content-around">
@@ -451,6 +406,22 @@
                 </div>
               </div>
               <!-- food-search btn ends -->
+
+              <!-- Reservation availability starts -->
+
+              <div class="reservation-availabilty d-flex justify-content-center w-100 mt-2">
+                          
+                <div class="notify-icon mt-1">
+                  .
+                </div>
+
+                <h6 class="px-3 text-white ">Reservation Available</h6>
+
+            </div>
+
+            <!-- Reservation availabilty ends--- -->
+
+
 
 
 
@@ -681,18 +652,15 @@
 
     <!-- banner starts------------------------ -->
     <div class="banner-section d-flex flex-column justify-content-center mb-5">          
-        <h1 class="banner-text text-center display-1 mt-4  " data-aos="fade-down-right" data-aos-duration="1500">Grab your special offer today</h1>
+        <h1 class="banner-text text-center display-3 mt-4  " data-aos="fade-down-right" data-aos-duration="1500">Grab your special offer today</h1>
 
-        <h1 class="text-center display-1 mt-4  fw-bold banner-offer" data-aos="fade-down-right" data-aos-duration="1200">50% off</h1>
-
-        
-
-        
+        <h1 class="text-center display-2 mt-4  fw-bold banner-offer" data-aos="fade-down-right" data-aos-duration="1200">50% off</h1>
+ 
     </div>
     <!-- banner ends-------------------------- -->
 
     <!-- client starts--------------------------->
-    <div class="client pb-5 ">
+    <div class="client pb-5">
       <div class="container h-100 ">  
 
                 <div class="row row-1">          
@@ -728,7 +696,7 @@
                                               class="star">★
                                         </span>
                                         <h6 id="output">
-                                              Rating is: 0/5
+                                              Rating is: 4/5
                                           </h6>
                                     
                                   </div>
@@ -764,7 +732,7 @@
                                   class="star">★
                             </span>
                             <h6 id="output">
-                                  Rating is: 0/5
+                                  Rating is: 4/5
                               </h6>
                         
                       </div>
@@ -800,7 +768,7 @@
                                   class="star">★
                             </span>
                             <h6 id="output">
-                                  Rating is: 0/5
+                                  Rating is: 5/5
                               </h6>
                         
                       </div>
@@ -818,82 +786,14 @@
     </div>
     <!-- client ends----------------------------->
 
-    <!-- about-us, visions starts------------- -->
-
-    <!-- about us section starts----->
-    <div class="about-us-section my-5">
-      
-      <div class="container-fluid h-100">
-        <div class="about-us-row row h-100">
-
-          <div class="about-us-img col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-            .
-          </div>
-
-          <div class="about-us-desc col-lg-6 ">
-            
-            <div class="row py-lg-3" data-aos="fade-left" data-aos-duration="1000">
-
-              <h3 class="text-center display-6" >About us</h3>
-
-              <p class="about-us-para text-center my-lg-5 px-5" >
-                Snappy Restaurant is dedicated to providing an exceptional dining experience that combines culinary excellence with a warm and inviting atmosphere. Our journey began with a passion for creating memorable meals that bring people together. We pride ourselves on using the freshest ingredients, sourced locally whenever possible, to craft dishes that delight the senses Our team of skilled chefs and attentive staff work tirelessly to ensure that every visit to Snappy Restaurant is a delightful experience. Whether you're joining us for a quick bite or a leisurely meal, we strive to make each moment special.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-    <!-- about us section ends------->
-    <!-- vision section starts ------>
-    <div class="vision-section my-5">
-      
-      <div class="container-fluid h-100">
-
-        <div class="row h-100" >
-
-          <div class="vision-desc col-lg-6">
-            
-            <div class="row py-lg-3" data-aos="fade-right" data-aos-duration="1000">
-              
-              <h3 class="text-center display-6">Our Vision</h3>
-
-              <p class="vision-para text-center my-lg-5 px-5">
-                At Snappy Restaurant, our vision is to be the go-to destination for food lovers seeking a blend of innovation and tradition. We aim to continuously evolve our menu to reflect the diverse flavors of the world while staying true to our roots. Our commitment to sustainability and community engagement drives us to make a positive impact beyond our restaurant walls.
-                We envision a future where Snappy Restaurant is synonymous with quality, creativity, and exceptional service. By fostering a culture of excellence and passion, we aspire to create lasting memories for our guests, one plate at a time.
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="vision-img col-lg-6 bg-success mt-5" data-aos="fade-left" data-aos-duration="1000" >
-            .
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-    <!-- vision section ends------ -->
-
-    <!-- about-us, visions ends--------------- -->
-
-    
-
     <!-- footer starts------------------------ -->
     <footer class="footer bg-dark mb-5">
-
+      <!-- follow-us starts -->
       <div class="row row-1 h-25 py-4">
           <div class="container h-100 py-2">
             <div class="row row-1 social-row justify-content-center h-100">
 
-              <!-- follow-us starts -->
+            
               <div class="follow col-lg-6 d-flex justify-content-center align-items-center gap-1">
 
                 <h6 class="lead text-white">Follow us on</h6>
@@ -906,14 +806,14 @@
 
                 
               </div>
-              <!-- follow-us-ends -->
+              
 
             </div>
           </div>
       </div>
+      <!-- follow-us-ends -->
 
       <div class=" row row-2  h-75">
-        
         <div class="col-md-3 p-lg-5">
 
           <!-- logo -->
@@ -931,6 +831,7 @@
 
         </div>
 
+        <!-- contact-us section starts -->
         <div class="footer-content col-md-3 d-flex align-items-center justify-content-center flex-column p-1">
           <p class="text-light ">Company</p>
           <p class="text-light ">Snappy Restaurant</p>
@@ -954,14 +855,13 @@
           <p class="text-light">Email : snappyrestaurant@hotmail.com</p>
           <p class="text-light">Opening Hours : 10.00 AM to 11.00 AM</p>
         </div>
+        <!-- contact-us section ends   -->
 
       </div>
 
     </footer>
     <!-- footer ends-------------------------- -->
    
-   
-
 <!-- end -->
  
     <!-- bootstrap js -->
