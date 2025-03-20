@@ -141,7 +141,7 @@
     background-color: rgb(205, 50, 50);
   }
 
-  .book-table{
+  /* .book-table{
     height:fit-content;
     width: 100%;
     
@@ -159,14 +159,19 @@
 
   .reservation-form input{
     width: 50%;
+  } */
+
+  .reservation-availabilty{
+    cursor: pointer;
   }
 
-  .notify-icon{
-    background-color: rgb(38, 255, 0);
-    height: 1rem;
-    width: 1rem;
-    border-radius: 0.5rem;
-  }
+
+.notify-icon{
+  background-color: rgb(38, 255, 0);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+}
 
   
   /* hero ends */
@@ -394,9 +399,9 @@ width: 7rem;
      <div class="hero">
       <div class=" hero-container container-fluid d-flex flex-column align-content-center justify-content-center ">
 
-          <h2 class="display-1 text-white text-center my-4" data-aos="zoom-in" data-aos-duration="1000">Food on wheels</h2>
+          <h2 class="display-1 text-white text-center" data-aos="zoom-in" data-aos-duration="1000">Food on wheels</h2>
              
-              <!-- food-search btn starts -->
+            <!-- food-search btn starts -->
               <div class=" d-flex justify-content-center my-4">
                 <div class="col-md-6  d-flex justify-content-around">
                   <form action="" class="hero-form d-flex justify-content-center w-100 " >
@@ -405,25 +410,23 @@ width: 7rem;
                   </form>
                 </div>
               </div>
-              <!-- food-search btn ends -->
+           <!-- food-search btn ends -->
 
-              <!-- Reservation availability starts -->
+            <!-- Reservation availability starts -->
 
-              <div class="reservation-availabilty d-flex justify-content-center w-100 mt-2">
-                          
-                <div class="notify-icon mt-1">
-                  .
-                </div>
+            <div class="reservation-availabilty d-flex justify-content-center align-items-center w-100 mt-2 gap-3">
+              
+           <a href="" class="btn btn-outline-primary d-flex justify-content-center align-items-center gap-3">    
+              <div class="notify-icon d-flex ">
+              </div>
 
-                <h6 class="px-3 text-white ">Reservation Available</h6>
-
+              <h6 class="text-white pt-2 reservation-head">Reservation Available</h6>
+  </a>
             </div>
+        
+
 
             <!-- Reservation availabilty ends--- -->
-
-
-
-
 
       </div>
      </div>
